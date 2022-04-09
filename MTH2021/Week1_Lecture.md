@@ -39,7 +39,7 @@
 ### 4. Basics of matrix
        - A: m * r, B: r * n, AB: m * n, (AB)_ij = \sum_{k=1}^r A_ik * B_kj
        - Square matrix A is SYMMETRIC if A^T = A
-       - TRACE of a n*n matrix is the sum of the elements on its main disgonal: tr(A) = $\sum_{i=1}^n$ A_ii
+       - TRACE of a n*n matrix is the sum of the elements on its main disgonal: tr(A) = $\sum_i=1^n$ A_ii
        - Two matrices are said to be commute if AB = BA
        - Upper Triangular: Square matrix U if U_ij = 0 for any i > j
        - Lower Triangular: Square matrix U if U_ij = 0 for any i < j

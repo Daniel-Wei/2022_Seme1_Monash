@@ -7,5 +7,5 @@
        - The ith column of A(m*n) is A*e_i
        - e_i = n*1 = [0 0 ... 1(ith) 0 .. 0]
 ### 3. Theorem 1.3.12: Let A be an m * n matrix
-       - If Ax = 0 for all x $\in$ R^n (n * 1 column vector)
+       - If Ax = 0 for all x$\in$R^n (n * 1 column vector)
        - Then A = 0

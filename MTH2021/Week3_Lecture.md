@@ -1,3 +1,15 @@
+## Equivalent Statements
+   - For an n * n matrix A
+   - A is invertible
+   - Ax = 0 has ONLY the TRIVAL solution x = 0
+   - The reduced echelon form of A is I_n
+   - A is a product of elementary matrices
+   - Ax = b is consistent for every b
+   - Ax = b has exactly one solution for every b
+   - det(A) != 0
+   - det(A^-1) = 1 / det(A)
+
+
 ## Lecture 1: LU Decomposition & Graph Theory
 
 ### 1. Theorem 1.6.1: LU Decomposition and Lower Triangular

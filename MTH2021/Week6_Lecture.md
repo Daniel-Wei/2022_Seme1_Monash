@@ -1,3 +1,23 @@
+## Equivalent Statements for an n * n matrix A
+   - A is invertible
+   - Ax = 0 has ONLY the TRIVAL solution x = 0
+   - The reduced echelon form of A is I_n
+   - A is a product of elementary matrices
+   - Ax = b is consistent for every b
+   - Ax = b has exactly one solution for every b
+   - det(A) != 0
+   - det(A^-1) = 1 / det(A)
+   - The Col Vectors of A is Linearly Independent
+   - The Row Vectors of A is Linearly Independent
+   - The Col Vectors of A Span R^n
+   - The Row Vectors of A Span R^n
+   - The Col Vectors of A form a Basis for R^n
+   - The Row Vectors of A form a Basis for R^n
+   - A has rank n
+   - A has nullity 0
+   - ran(T_A) = R^n
+
+
 ## Lecture 1
 
 ### 1. Theorem 4.3.15: Subset contains n vectors in n-demensional vector space
@@ -122,24 +142,23 @@
        - dim(coker(A)) = m - r = nullity(A^T)
        - For ANY matrix, the num of Linearly Independent Cols = the num of Linearly Independent Rows
        
-### 6. 
-         
        
 
+## Chapter 4.7: Direct Sums & Orthogonal Complements
 
+### 6. Definition 4.7.1 (Direct) Sums
+       - Let V and W be subspaces of a vector space U
+       - The SUM of V and W is: V + W = {v + w: v in V and w in W}
+       - If V and W has NO Intersection, the SUM is DIRECT
+       
+### 7. Theorem 4.7.2: If V and W are subspaces of a vector space U, then their SUM is a subspace of U
 
+### 8. Theorem 4.7.3: If V and W are subspaces of a vector space U, then their SUM is DIRECT IFF for every u in U, can be written UNIQUELY as u = v + w with v in V and w in W
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### 9. Definition 4.7.4: Orthogonal
+       - If V and W are subspaces of Euclidean n-space (R^n)
+       - If every v in V is orthogonal to every vector w in W
+       
+### 10. Lemma 4.7.5
+        - V and W are subspaces of Euclidean n-space (R^n)
+        - If V is Orthogonal to W, then there is NO Intersection of those two

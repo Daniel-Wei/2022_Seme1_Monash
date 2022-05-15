@@ -65,6 +65,18 @@
         - Onto: dim(V) == dim(W)
         
         
+## Lecture 2: 2nd May 2022
+
+## Chapter 5.4 Matrix Representations
+
+### 1. Def 5.4.1: Matrix for T Relative to the Base B and B'
+       - Let T: V -> W be a linear transformation
+       - B = {v1, v2, ..., v_n} is a basis for V
+       - B' = {w1, w2, ..., w_m} is a basis for W
+       - Define the Matrix for T Relative to the Base B and B' as
+         -- [T]_(B', B) = [[T(v1)]_B', [T(v2)]_B', ..., [T(v_n)]_B']
+        
+          
 
 
 

@@ -109,8 +109,47 @@
   - exist f: E -> R such that F = gradient of f
   - NOT every vector field F is conservative
   - Condition 1: 
-    - in R^2: 
+    - in R^2: F = (F_1, F_2) & F1_y = F2_x
+    - in R^3: F = (F_1, F_2, F_3) & F1_y = F2_x, F1_z = F3_x, F2_z = F3_y
+  - Condition 2: Region D/E has no holes
+ 
+* Length of Curves in R^2
+  - The Length of a C^1 parametric curve that is parameterized by r(t) = (x(t), y(t))
+  - Range of t: [a, b]
+  - Curve Length e = integral of [a, b] | (d(r(t))) / (dt) | dt
+    - => integral of [a, b] (square root of ((dx/dt)^2 + (dy/dt)^2)) dt
 
+* Line Integrals
+  - in R^2
+    - The line integral of a C^0 function f(x, y) along a C^1 parametric curve t 
+    - t is a curve parametrized by r(t) = (x(t), y(t)), t in [a, b]
+    - integral of f(x, y) dS on C = integral of f(r(t)) * |(dr) / d(t)| dt on [a, b]
+    - dS is the length element
+    - => integral of f(x(t), y(t)) * (square root of ((dx/dt)^2 + (dy/dt)^2)) dt on [a, b]
+  
+  - Orientation & Representation
+    - A parametrization r(t) = (x(t), y(t)), t in [a, b] of a curve defines an orientation of the curve
+    - By Assigning a direction to it given by the motion(移动) of r(t) increases as t increases
+    - Opposite Reverse Orientation of r(t): r'(t) = r(b - (t-a))
+    - Line integrals of r(t) and r'(t) on the same line & same t range are SAME
+    - Line integrals of (integral of (f dS) in C) and (integral of (f dS) in -C) are OPPOSITE
+
+  - Along Piecewise Curves
+    - C is a curve that can be decomposed into a disgoint union
+    - Line integral of integral of (f dS) on C = sum of (i in [1, n]) of (integral of (f dS) on C_i)
+
+  - Of Vector Fields in R^2
+    - Line integral of a C^0 vector field along a C^1 parametric curve C
+    - r(t) = (x(t), y(t))
+    - F = (p(x,y), q(x, y))
+    - t in [a, b]
+    - Line integral = integral of (F dr) on curve C = integral of (F TdS) on curve C
+    - T = (1 / (|dr / dt|)) * (dr / dt), dS = (|dr / dt| ) * dt
+    - => integral of (F TdS) on curve C = integral of (F * (dr / dt) dt) on t range [a, b]
+    - => integral of (p(x(t), y(t)) (dx/dt) dt) on [a, b] + integral of (q(x(t), y(t)) (dy/dt) dt) on [a, b]
+
+    - The Work done by a force field F(x, y) = (F_1(x, y), F_2(x, y)) in moving an object along a curve C: W = integral of (F dr) on curve C
+    - Opposite orientation of r(t) has Opposite work done
 
 #### 9. Finding critical points and the minimum.
 * Classifying Critical Points of f(x, y) at (a, b)

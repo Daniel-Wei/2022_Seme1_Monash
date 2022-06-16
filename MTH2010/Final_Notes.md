@@ -22,3 +22,7 @@
 
 #### 2. Check whether the limit exists or not
 * (x, y) |-> (0, 0): Check whether the limits of (t, 0) |-> (0, 0) and (0, t) |-> (0, 0) are the same
+* (x, y) |-> (a, b): Dominator at (a, b) != 0, while both the numerator and dominator are polynomials, so limit of f(x, y) at (a, b) is f(a, b)
+* (x, y) |-> (a, b): Dominator at (a, b) == 0, but numerator could factorises at other points, do the factorization and get g(x, y). Limit of f(x, y) at (a, b) is g(a, b)
+* Squeeze Theorem: 0 <= |f(x, y) - L| <= g(x, y) |-> 0: |x| / |y| <= sqar root of (x^2 + y^2)
+* Continuity: f(x, y) is continuous at (a, b) IFF limit of f(x, y) at (a, b) == f(a, b)

@@ -21,4 +21,4 @@
 ## Own Summary 
 
 #### 2. Check whether the limit exists or not
-** (x, y) |-> (0, 0): Check whether the limits of (t, 0) |-> (0, 0) and (0, t) |-> (0, 0) are the same
+* (x, y) |-> (0, 0): Check whether the limits of (t, 0) |-> (0, 0) and (0, t) |-> (0, 0) are the same

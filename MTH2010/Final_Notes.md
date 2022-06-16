@@ -47,9 +47,9 @@
 * Jacobian for Polar Coordinates: r. J(T) > 0 as r > 0
 * x = r * cos(theta), y = r * sin(theta)
 * Area Element = Integral of r drd(theta) on the region T(D)
-  - 4 Leaved Rose r = |cos(2*theta)| 
+  - 4 Leaved Rose r = abs(cos(2*theta))
   - Integral of <-pi/4, pi/4> <0, cos(2 * theta)> r drd(theta)
-  - cos(2*theta) = (1 + cos(4*theta)) / 2
+  - cos(2* theta) = (1 + cos(4 * theta)) / 2
 
 
 #### 9. Finding critical points and the minimum.

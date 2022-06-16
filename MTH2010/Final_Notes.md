@@ -48,5 +48,24 @@
 * Classifying Critical Points of f(x, y) at (a, b)
 
   - f(x, y) is C^2 on Ball(a, b)
+  - Gradient of f(x, y) at (a, b) is 0
+  - A = f_xx(a, b), B = f_xy = f_yx(a, b), C = f_yy(a, b)
+  - Local Min: AC > B^2 & A > 0
+  - Local Max: AC > B^2 & A < 0
+  - Saddle Point: AC < B^2
+  - No Info: AC = B^2
 
-* If D in R^2, Closed & Bounded, f(x, y) is con
+* Absolute Maxima & Minima
+
+  - D is in R^2, Closed & Bounded
+  - f(x, y) is continuous on D
+  - Then there exist points where f(x, y) achieves an abs maxima/minima on D
+
+* Lagrange Multiplies
+  - Determine the abs extrema of f(x, y) subject to a constraint g(x, y) = 0
+  - Find all values for {f_x = k * g_x, f_y = k * g_y, g(x, y) = 0}
+
+
+#### 12. Fubini theorem
+* Simplest Region in R^2 is bothe x-simple & y-simple
+* Integral of f(x, y) on dA = f(x, y) dxdy = f(x, y) dydx <Free to Change the Integral Calculation Order> 

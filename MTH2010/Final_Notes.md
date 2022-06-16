@@ -46,6 +46,6 @@
 
 #### 4'. Maximum & Minimum Values
 * Classifying Critical Points of f(x, y) at (a, b)
-..* f(x, y) is C^2 on Ball(a, b)
+..1. f(x, y) is C^2 on Ball(a, b)
 
 * If D in R^2, Closed & Bounded, f(x, y) is con

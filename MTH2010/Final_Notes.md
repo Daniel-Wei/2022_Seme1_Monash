@@ -38,21 +38,21 @@
 
 
 #### 4. Finding the normal vector and the tangent plane of surfaces
-* Implicit Differentiation 
-  - F(x, y) == 0 --> dy/dx = -Fx/Fy
-  - For x^2 - y^2 + z^2 - 2z = 4, use implicit differentiation to find dz/dy: treant x like a constant and z like a function of y, then partially differentiate both sides of the given equation with respect to y
-  - check the existentce of f(x) such that f(2) = -2 and F(x, f(x)) == 0: F(2, -2) == 0 and F_y(2, -2) != 0
-  
-* Gradient of a differential f(x, y) at (x0, y0) is (f_x(x0, y0), f_y(x0, y0))
-
-* Directional Derivative of a differential f(x, y) at (x0, y0) in the direction of vector u is: (unit vector of u) * gredient of f(x, y) at (x0, y0)
-
-* Important Fact: If f(x, y) is differentiable at (x0, y0) and its gradient at (x0, y0) != 0, then its gradient at (x0, y0) is orthogonal to the level curve of f(x, y) that passes through the point (x0, y0)
-
-* Find the vector tangent to the curve of the intersection of two functions at the point (x0, y0, z0): n1 x n2, where n1, n2 are the gradients of f1, f2 at (x0, y0, z0)
+* Normal Vector to the Tangent Plane of Surfaces: (-f_x, f_y, 1)
+* Algebraic Representation of a Tangent Plane of Surfaces at point (x0, y0, f(x0, y0))
+  - f_x(x0, y0) * (x - x0) + f_y(x0, y0) * (y - y0) + (z - f(x0, y0)) = 0
 
 
-#### 4'. Maximum & Minimum Values
+#### 5. Polar coordinate and integration
+* Jacobian for Polar Coordinates: r. J(T) > 0 as r > 0
+* x = r * cos(theta), y = r * sin(theta)
+* Area Element = Integral of r drd(theta) on the region T(D)
+  - 4 Leaved Rose r = |cos(2*theta)| 
+  - Integral of <-pi/4, pi/4> <0, cos(2 * theta)> r drd(theta)
+  - cos(2*theta) = (1 + cos(4*theta)) / 2
+
+
+#### 9. Finding critical points and the minimum.
 * Classifying Critical Points of f(x, y) at (a, b)
 
   - f(x, y) is C^2 on Ball(a, b)
@@ -69,9 +69,37 @@
   - f(x, y) is continuous on D
   - Then there exist points where f(x, y) achieves an abs maxima/minima on D
 
+
+#### 10. Properties of gradient and the Lagrange multiplier method
+* Implicit Differentiation 
+  - F(x, y) == 0 --> dy/dx = -Fx/Fy
+  - For x^2 - y^2 + z^2 - 2z = 4, use implicit differentiation to find dz/dy: treant x like a constant and z like a function of y, then partially differentiate both sides of the given equation with respect to y
+  - check the existentce of f(x) such that f(2) = -2 and F(x, f(x)) == 0: F(2, -2) == 0 and F_y(2, -2) != 0
+  
+* Gradient of a differential f(x, y) at (x0, y0) is (f_x(x0, y0), f_y(x0, y0))
+
+* Directional Derivative of a differential f(x, y) at (x0, y0) in the direction of vector u is: (unit vector of u) * gredient of f(x, y) at (x0, y0)
+
+* Important Fact: If f(x, y) is differentiable at (x0, y0) and its gradient at (x0, y0) != 0, then its gradient at (x0, y0) is orthogonal to the level curve of f(x, y) that passes through the point (x0, y0)
+
+* Find the vector tangent to the curve of the intersection of two functions at the point (x0, y0, z0): n1 x n2, where n1, n2 are the gradients of f1, f2 at (x0, y0, z0)
+
 * Lagrange Multiplies
   - Determine the abs extrema of f(x, y) subject to a constraint g(x, y) = 0
   - Find all values for {f_x = k * g_x, f_y = k * g_y, g(x, y) = 0}
+
+
+#### 11. Jacobian and the change of variables for a multivariable function.
+* Jacobian of a Differentiable Map
+  - F: D in R^2 |-> R^2: (u, v) |-> f(u, v) = (f1(u, v), f2(u, v))
+  - J(f) = f1_u * f2_v - f1_v * f2_u
+
+* Area Element
+  - Area(T(R)) = |J(T)(u0, v0) * delta(u) * delta(v)|
+
+* Change of Variables Formula
+  - Intergral of f(x, y) dxdy on the region T(D) = integral of f(T(u, v)) * |J(T) (u, v)| dudv on the region D 
+  - T: D -> R^2: (u, v) |-> T(u, v) = (T1(u, v), T2(u, v))
 
 
 #### 12. Fubini theorem

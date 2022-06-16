@@ -45,11 +45,17 @@
 
 #### 5. Polar coordinate and integration
 * Jacobian for Polar Coordinates: r. J(T) > 0 as r > 0
+
 * x = r * cos(theta), y = r * sin(theta)
+
 * Area Element = Integral of r drd(theta) on the region T(D)
   - 4 Leaved Rose r = abs(cos(2*theta))
   - Integral of <-pi/4, pi/4> <0, cos(2 * theta)> r drd(theta)
   - cos(2* theta) = (1 + cos(4 * theta)) / 2
+
+* When to use Polar Coordinates for Integration
+  - Simplifies the Domian of Integration: e.g., D is the region in the 1st quadrant being inside the disk x^2 + y^2 <= a^2 and under the line y = x
+  - Simplifies the Function being Integrated: e.g., f(x, y) = ln(x^2 + y^2 + 1)
 
 
 #### 9. Finding critical points and the minimum.
@@ -105,3 +111,13 @@
 #### 12. Fubini theorem
 * Simplest Region in R^2 is bothe x-simple & y-simple
 * Integral of f(x, y) on dA = f(x, y) dxdy = f(x, y) dydx <Free to Change the Integral Calculation Order> 
+  
+#### 13. Finding the total charge on a surface
+* Mass Density: p(x, y)
+
+* Mass = integral of p(x, y) dA on the region D
+  - Mass Region = [ (Min p(x, y) on D) * Area(D), (Max p(x, y) on D) * Area(D) ]
+
+* Centre of Mass: (x', y') 
+  - x' = (1 / m) * integral of x * p(x, y) dA on the region D
+  - y' = (1 / m) * integral of y * p(x, y) dA on the region D

@@ -22,6 +22,7 @@
 
 #### 2. Check whether the limit exists or not
 * (x, y) |-> (0, 0): Check whether the limits of (t, 0) |-> (0, 0) and (0, t) |-> (0, 0) are the same
+
 * (x, y) |-> (a, b)
   - Dominator at (a, b) != 0, while both the numerator and dominator are polynomials, so limit of f(x, y) at (a, b) is f(a, b)
   - Dominator at (a, b) == 0, but numerator could factorises at other points, do the factorization and get g(x, y). Limit of f(x, y) at (a, b) is g(a, b)
@@ -56,6 +57,59 @@
 * When to use Polar Coordinates for Integration
   - Simplifies the Domian of Integration: e.g., D is the region in the 1st quadrant being inside the disk x^2 + y^2 <= a^2 and under the line y = x
   - Simplifies the Function being Integrated: e.g., f(x, y) = ln(x^2 + y^2 + 1)
+
+
+#### 6. Cylindrical coordinate and integration
+* x = r * (cos(theta)), y = r * (sin(theta)), z = z
+
+* Theta: Closewise Angle to X - axis
+
+* Volume Element 
+  - integral of dV on the region D
+  - integral of r drd(theta)dz on the region T(D)
+
+* Integration Formula
+  - integral of f(x, y, z) dV on the region T(E)
+  - integral of f(T(r, theta, z)) r drd(theta)dz on the region E
+  - T(r, theta, z) = (r * (cos(theta)), r * (sin(theta)), z)
+  - |J(T)| = r
+
+#### 7. Spherical coordinate and integration
+* x = p * sin(Psi) * cos(theta), y = p * sin(Psi) * sin(theta), z = cos(Psi)
+
+* Angle Theta
+  - image in the x-y plane, at the anticlosewise angle to X - axis
+  - Range: [0, 2 * pi]
+
+* Angle Psi
+  - Rotation angle to Z - axis
+  - Range: [0, pi]
+
+* Length p
+  - Distance to the origin (0, 0)
+  - Range: [0, +inf]
+
+* Volume Element 
+  - integral of dV on the region D
+  - integral of p^2 * sin(Psi) dpd(theta)d(psi) on the region T(D)
+
+* Integration Formula
+  - integral of f(x, y, z) dV on the region T(E)
+  - integral of f(T(p, Psi, Theta)) p^2 * sin(Psi) dpd(theta)d(psi) on the region E
+  - T(r, theta, z) = (p * sin(Psi) * cos(theta), p * sin(Psi) * sin(theta), cos(Psi))
+  - |J(T)| = p^2 * sin(Psi)
+
+
+#### 8. Line integrals, work done by a force field, and conservative Vector Field
+* Vector Field: map F
+  - On region D in R^2: F: D in R^2 |-> R^2: (x, y) |-> F(x, y) = (F_1(x, y), F_2(x, y))
+  - On region E in R^3: F: E in R^3 |-> R^3: (x, y, z) |-> F(x, y, z) = (F_1(x, y, z), F_2(x, y, z), F_3(x, y, z))
+
+* Conservative Vector Field F
+  - exist f: E -> R such that F = gradient of f
+  - NOT every vector field F is conservative
+  - Condition 1: 
+    - in R^2: 
 
 
 #### 9. Finding critical points and the minimum.
@@ -110,7 +164,12 @@
 
 #### 12. Fubini theorem
 * Simplest Region in R^2 is bothe x-simple & y-simple
+
 * Integral of f(x, y) on dA = f(x, y) dxdy = f(x, y) dydx <Free to Change the Integral Calculation Order> 
+  
+* Example: Integral of [0, pi] [0, 2 * pi] [0, 1] e^(p^3) * p^2 * sin(Psi) dpd(theta)d(Psi)
+  - => [Integral of [0, 1] e^(p^3) * p^2] * [Integral of [0, 2 * pi] 1 d(theta)] * [Integral of [0, pi] sin(Psi) d(Psi)] 
+  - => ((1/3) * (e - 1)) * (2 * pi) * 2
   
 #### 13. Finding the total charge on a surface
 * Mass Density: p(x, y)

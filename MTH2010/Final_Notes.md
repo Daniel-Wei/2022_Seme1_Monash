@@ -255,3 +255,5 @@
 * Centre of Mass: (x', y') 
   - x' = (1 / m) * integral of x * p(x, y) dA on the region D
   - y' = (1 / m) * integral of y * p(x, y) dA on the region D
+  
+#### 14. Green's Theorem

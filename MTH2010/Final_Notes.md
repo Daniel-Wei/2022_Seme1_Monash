@@ -180,11 +180,12 @@
     - That is, if r(t), t in [a, b], IS a Parameterization of C 
     - Then r(a) = p, r(b) = q
   
-  - Let D in R^2 or R^3 be an open and path connected set and F is a C^0 vector field on D
-  - Then the following statements are equivalent
+  - Let D in R^2 or R^3 be an open and path connected set and F is a C^0 vector field on D, then the following statements are equivalent
     - F is conservative in D
     - Integral of F dr on C is 0, for every closed, piecewise C^1 Curve C that lies in D
     - For any two piceswise C^1 curve C1 and C2 that connects p to q, p & q in D, Integral of F dr on C1 == Integrla of F dr on C2 
+
+  - Application - Show Line Integral of a Vector Field is Path Independent: Show the Vector Field is Conservative, aka, find its antiderivative
 
 #### 9. Finding critical points and the minimum.
 * Classifying Critical Points of f(x, y) at (a, b)

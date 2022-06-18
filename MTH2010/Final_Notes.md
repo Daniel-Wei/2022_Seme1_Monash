@@ -257,3 +257,22 @@
   - y' = (1 / m) * integral of y * p(x, y) dA on the region D
   
 #### 14. Green's Theorem
+* Integral of F dr on Curve C = Integral of Pdx + Qdy on C = Double Integral of (dQ/dx - dP/dy) dA on D
+  - Curve C is a Closed, Simple, Positive(Anticlockwise) Oriented Curve in R^2
+  - D is the Region Enclosed by Curve C
+  - F = (P, Q) is a C^1 Vector Field defined in the Region D U C (Area U Boundary)
+  
+* Simple Curve: No Intersecrions between its end points
+  
+* Area(D) = (1/2) * Integral of (xdy - ydx) on C
+  
+* Non-Simple Connected Ones: Line Integral of F dr on (C1 U C2) = curl(F) dA on D
+  - C1, outer boundary, positive(anticlockwise) oriented
+  - C2, inner boundary, negative(clockwise) oriented
+  
+* Test for Conservative Vector Fields on R^2
+  - Suppose F(x, y) = (P(x, y), Q(x, y)) is a C^1 vector field on an Open & Simply Connected domain(NO Holes) D in R^2
+  - dP/dy = dQ/dx <=> curl F = 0 in D <=> F is Conservative 
+  
+  - If D is NOT Simply Connected, then dP/dy == dQ/dx NOT Necesserily imply that F is Conservative
+  

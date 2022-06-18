@@ -119,8 +119,8 @@
   - Curve Length e = integral of [a, b] | (d(r(t))) / (dt) | dt
     - => integral of [a, b] (square root of ((dx/dt)^2 + (dy/dt)^2)) dt
 
-* Line Integrals
-  - in R^2
+* Line Integrals in R^2
+  - Function along Parametric Curve
     - The line integral of a C^0 function f(x, y) along a C^1 parametric curve t 
     - t is a curve parametrized by r(t) = (x(t), y(t)), t in [a, b]
     - integral of f(x, y) dS on C = integral of f(r(t)) * |(dr) / d(t)| dt on [a, b]
@@ -150,6 +150,41 @@
 
     - The Work done by a force field F(x, y) = (F_1(x, y), F_2(x, y)) in moving an object along a curve C: W = integral of (F dr) on curve C
     - Opposite orientation of r(t) has Opposite work done
+
+* Line Integrals in R^3
+  - C is a C^1 Curve parameterized by r(t) = (x(t), y(t), z(t)), t in [a, b]
+  - Length of Curves
+    - Length(C) = integral of ds on Curve C
+    - == integral of | (dr) / (ds) | * dt on [a, b]
+    - == Integral of (square root of ( (dx/dt) ^ 2 + (dy/dt) ^ 2 + (dz/dt) ^ 2 ) ) * dt on [a, b]
+  - Line Integrals of Functions
+    - Line Integral of f(x, y, z) along C == Integral of f dS on Curve c
+    - == Integral of f(r(t)) * | dr / dt | dt on [a, b]
+    - == Integral of f(x(t), y(t), z(t)) * (square root of ( (dx/dt) ^ 2 + (dy/dt) ^ 2 + (dz/dt) ^ 2 ) ) * dt on [a, b]
+  - Line Integrals of Vector Fields
+    - F(x, y, z) = (P(x, y, z), Q(x, y, z), R(x, y, z))
+    - Integral of F dr on Curve C = Integral of F(r(t)) * (dr/dt) dt on [a, b]
+    - == Integral of Pdx + Qdy + Rdz on Curve C
+    - == Integral of P dx/dt + Q dy/dt + R dz/dt on [a, b]
+
+* Fundamental Theorem for Line Integrals: For Conservative Vector Fields
+  - Suppose C is a C^1 Curve that is parameterized by r(t)
+  - t in [a. b]
+  - f is a C^1 Function on C
+  - Integral of gradient of f dr on Curve C = f(r(b)) - f(r(a))
+
+* Path Independance Theorem
+  - Path Connected
+    - An Open Set U in R^n is called path connected
+    - IF for every points p, q in U, there exists a piecewise C^1 Curve C that connects p to q
+    - That is, if r(t), t in [a, b], IS a Parameterization of C 
+    - Then r(a) = p, r(b) = q
+  
+  - Let D in R^2 or R^3 be an open and path connected set and F is a C^0 vector field on D
+  - Then the following statements are equivalent
+    - F is conservative in D
+    - Integral of F dr on C is 0, for every closed, piecewise C^1 Curve C that lies in D
+    - For any two piceswise C^1 curve C1 and C2 that connects p to q, p & q in D, Integral of F dr on C1 == Integrla of F dr on C2 
 
 #### 9. Finding critical points and the minimum.
 * Classifying Critical Points of f(x, y) at (a, b)

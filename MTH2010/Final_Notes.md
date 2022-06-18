@@ -271,8 +271,22 @@
   - C2, inner boundary, negative(clockwise) oriented
   
 * Test for Conservative Vector Fields on R^2
-  - Suppose F(x, y) = (P(x, y), Q(x, y)) is a C^1 vector field on an Open & Simply Connected domain(NO Holes) D in R^2
-  - dP/dy = dQ/dx <=> curl F = 0 in D <=> F is Conservative 
+  - Condition 1: F(x, y) = (P(x, y), Q(x, y)) is a C^1 vector field on an Open & Simply Connected domain(NO Holes) D in R^2
+  - Condition 2: dP/dy = dQ/dx <=> curl F = 0 in D <=> F is Conservative 
   
   - If D is NOT Simply Connected, then dP/dy == dQ/dx NOT Necesserily imply that F is Conservative
   
+* Curl of a Differentiable Vector Field F in R^3, F(x, y, z) = (P, Q, R)
+  - curl(F) = (dR/dy - dQ/dz, dP/dz - dR/dx, dQ/dx - dP/dy)
+  - == det(m), row_1(m) = [i, j, k], row_2(m) = (d/dx, d/dy, d/dz), row_3(m) = [P, Q, R]
+  
+  - F is Irrotational(无旋的) in E
+    - F is a C^1 Vector Field on E in R^3 & Curl(F) = 0 in E 
+    - Every Conservative Vector Field is Irrotational
+    - f(x, y, z) is a C^2 function on E in R^3, then Curl(Gradient(f)) = 0 in E
+  
+  
+#### 16. Divergence theorem
+* Divergence
+  - Divergence of a Differentiable Vector Field F in R^3, F(x, y, z) = (P, Q, R)
+  - div(F)= dP/dx + dQ/dy + dR/dz

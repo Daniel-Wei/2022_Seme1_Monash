@@ -309,3 +309,32 @@
   - normal of r(t) = (dx/dt, dy/dt) / (square root of ( (dx/dt)^2 + (dy/dt)^2 )
   - Actually, n is r(t) rotated by 90 degree in clockwise direction
   - n = (dy/dt, -dx/dt) / (square root of ( (dx/dt)^2 + (dy/dt)^2 )
+  
+#### 17. Parametric Surfaces
+* A C^1 Parametric Surface 
+  - Condition 1: the image of a One-to-One C^1 map r
+  - r: R^2 -> R^3: (u, v) |-> r(u, v) = (x(u, v), y(u, v), z(u, v))
+  - Condition 2: Everywhere on the Surface has a Well-Defined Normal Vector: (dr/du) * (dr/dv) != 0
+  - S denotes the parametric surface: S = r(D)
+  
+* Examples
+  - Example 1 - Surfaces of Functions: r(u, v) = (u, v, f(u, v))
+  - Example 2 - Surfaces of Revolution
+    - y = f(z) > 0
+    - r(theta, z) = (f(z) * cos(theta), f(z) * sin(theta), z)
+    - z in [a, b], theta in [0, 2*pi]
+  
+* Tangent Planes
+  - dr/du & dr/dv are two tangent vectors at point r(u0, v0), linearly independent, spans the tangent plane
+  - T_p_S = { r(u0, v0) + a * (dr/du)(u0, v0) + b * (dr/dv)(u0, v0) | a, b in R }
+  - Normal Vector = n(u0, v0): (dr/du)(u0, v0) x (dr/dv)(u0, v0)
+  - T_p_S = n(u0, v0) * (r(u, v) - r(u0, v0)) = 0
+  
+* Surface Area Element
+  - Area Element = dS = | (dr/du) * (dr/dv) | du dv
+  - Area(S) = Double Integral of | (dr/du) * (dr/dv) | dudv on D
+  
+  - Surface Area Element of Surfaces of Functions
+    - r(u, v) = (u, v, f(u, v))
+    - (dr/du) * (dr/dv) = (-df/du, -df/dv, 1)
+    - Area(S) = Integral of (square root of ( (df/du)^2 + (df/dv)^2 + 1 )) dudv on D

@@ -290,3 +290,22 @@
 * Divergence
   - Divergence of a Differentiable Vector Field F in R^3, F(x, y, z) = (P, Q, R)
   - div(F)= dP/dx + dQ/dy + dR/dz
+
+* Incompressible
+  - F is a C^1 Vector Field on E in R^2
+  - div(F) = 0 in E
+
+* F is a C^2 Vector Field on E in R^3 --> div(curl(F)) = 0 in E
+
+* Actual Theorem: Calculate the Flux of a Vector Field on Curve C
+  - Integral of F*n dS on Curve C = Double Integral of div(F) dA on Enclosed Region D
+  
+  - Curve C is a Positively Oriented, Simple, Closed, Piecewise C^1 Curve
+  - Encloses a Region D = Union of D_i, each D_i is Simple
+  - F(x, y) = (P(x, y), Q(x, y)) is a Vector Field on D
+  - n is the antiword pointng unit normal to C
+  
+  - r(t) = (x(t), y(t)), t in [a, b] is a parameterization of Curve C
+  - normal of r(t) = (dx/dt, dy/dt) / (square root of ( (dx/dt)^2 + (dy/dt)^2 )
+  - Actually, n is r(t) rotated by 90 degree in clockwise direction
+  - n = (dy/dt, -dx/dt) / (square root of ( (dx/dt)^2 + (dy/dt)^2 )

@@ -286,6 +286,26 @@
     - f(x, y, z) is a C^2 function on E in R^3, then Curl(Gradient(f)) = 0 in E
   
   
+#### 15. Stoke's theorem
+* S is an Oriented Surface, Boundary is given by a Closed & Simple Curve
+  - Orientation of the Curve: Right Hand Rule
+  
+* F is a C^1 vector field defined on S
+  - Line Integral of F dr on C = Surface Double Integral of (curl(F) dS) on S
+ 
+* Green' Theorem is a Special case of Stoke's Theorem
+  - Green's Theorem: Region D == Flat Surface S, then Line Integral of F dr on C = Double integral of curl(F) on dS/dA
+  - Stoke's Theorem: Surface S might Not be Flat, then Line Integral of F dr on C = Double Integral of (curl(F) * n) dA, dA is the Area under the Surface, n is the normal of dA
+  
+* Simply Connected Surfaces
+  - A region D in R^3 is Simply Connected if Every Closed Curve inside it bounds a surface, inside the region D
+  - In particular, R^3 / {finite points} IS simply connected
+  - Examples 
+    - R^3 / {(0, 0, 0)} IS simply connected
+    - R^3 / { z-axis } is NOT simply connected
+    - R^2 / {(0, 0, 0)} is NOT simply connected
+  
+  
 #### 16. Divergence theorem
 * Divergence
   - Divergence of a Differentiable Vector Field F in R^3, F(x, y, z) = (P, Q, R)

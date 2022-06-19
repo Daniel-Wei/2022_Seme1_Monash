@@ -338,3 +338,29 @@
     - r(u, v) = (u, v, f(u, v))
     - (dr/du) * (dr/dv) = (-df/du, -df/dv, 1)
     - Area(S) = Integral of (square root of ( (df/du)^2 + (df/dv)^2 + 1 )) dudv on D
+  
+
+#### 18. Surface Integrals
+* Surface Integral of a C^0 Function f(x, y, z) over a C^1 surface S 
+  - Surface S is parametrized by r(u, v) = (x(u, v), y(u, v), z(u, v)), u & v in D
+  - Integral of f dS on S = Double Integral of f(r(u, v)) | (dr/du) * (dr/dv) | dudv
+
+* Surface Integral of a C^0 Vector Field over an oriented C^1 surface
+  - Flux of Vector Field F across the Surface S
+  - Surface is parametrized by r(u, v) = (x(u, v), y(u, v), z(u, v)), u & v in D
+  - Double Integral F dS = Double Integral of F.n dS = Double Integral of F(r(u, v)) (dr/du) * (dr/dv) dudv 
+  - Compared to Surface Integral of Function: No Abs of dr/du * dr/dv
+  
+  
+#### 19. Orientable Surfaces
+* Def: If it is possible to choose normal vector at each point
+  - i.e., normal vector n varies continuously on S, then this surface S is orientable
+  
+* Positive Orientation
+  - Defined by | (dr/du) * (dr/dv) |
+  - Example
+    - r(x, y) = (x, y, f(x, y))
+    - dr/dx * dr/dy = (-df/dx, -df/dy, 1)
+    - n = 1 / (square root of ( (df/dx)^2 + (df/dy)^2 + 1 )) * (-df/dx, -df/dy, 1)
+    - As always z = 1, positive oriented
+  
